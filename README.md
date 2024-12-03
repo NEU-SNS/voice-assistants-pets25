@@ -20,31 +20,65 @@ There are also two folders `Amazon Queries` and `Google Queries` containing the 
 
 
 ### Security/Privacy Issues and Ethical Concerns (All badges)
+
 - **Account Credentials:** Since the `seleniumscript.py` script requires reviewers to enter their Google login credentials, there is a risk associated with storing and processing these credentials. Reviewers should use a test account rather than a personal or sensitive account to avoid unintended data exposure. Additionally, please ensure that credentials are not stored in code files or shared inadvertently.
 - **Intended Use:** The artifact should only be used for research and review purposes as intended by the submission guidelines. The automation scripts are not intended for any malicious or unauthorized use.
 
 ## Basic Requirements (Only for Functional and Reproduced badges)
 
+This document outlines the hardware and software requirements for executing the artifact, either within the provided Virtual Machine (VM) or on your own system. The VM is pre-configured with all dependencies, simplifying setup for reviewers.
+
+
+
 ### Hardware Requirements
-If your artifact requires specific hardware to be executed, mention that here.
-Provide instructions on how a reviewer can gain access to that hardware through remote access, buying or renting, or even emulating the hardware.
-Make sure to preserve the anonymity of the reviewer at any time.
+
+#### Using the VM:
+- **Host System Requirements:**
+  - **RAM:** At least 8 GB (6 GB allocated to the VM, 2 GB for the host OS).
+  - **CPU:** A multi-core processor with virtualization support (e.g., VT-x/AMD-V enabled).
+  - **Storage:** Minimum 20 GB of free disk space to accommodate the VM file and additional data.
+  - **Virtualization Software:** VirtualBox (latest version recommended).
+  - **Audio Output:** A speaker connected to the computer is necessary for the `voiceassistantscript.py` python file.
+  
+
+ - **VM Audio Specifications:**
+  - **Host Driver**: Windows DirectSound, configured to use the host system's audio capabilities.
+  - **Controller**: ICH AC97, commonly supported and emulated audio controller.
+
+
+If your system meets the above requirements, simply download and import the pre-configured VM to get started.
+
+#### Without the VM:
+
+If you prefer to run the artifact directly on your host system, ensure the following hardware configurations:
+
+- **Processor:** A multi-core CPU is recommended to handle the computational demands efficiently.
+- **RAM:** Minimum of 4 GB required to ensure smooth operation.
+- **Storage:** At least 1 GB of free disk space is needed for installation and runtime data.
+- **Audio Output:** Ensure that a speaker is connected to the computer for the `voiceassistantscript.py` python file.
+
 
 ### Software Requirements
-The artifact is tested on the following software:
-- **Operating System:** Ubuntu 20.04 (recommended), also other Linux distributions should work. The code should also work on Windows and macOS with minor adjustments.
-- **Python Version:** 3.8 or higher
 
-- Additional Software:
-   -**ffmpeg:** Required for audio playback with ffplay in play_audio_files() script.
-   -**Google Chrome:** For Selenium-based web interactions. Install the latest stable version.
-   -**Chromedriver:** Compatible version with Chrome. This will be handled by SeleniumBase.
-   -**Third-party Python packages:** Managed via pip in requirements.txt.
+- The VM is pre-installed with:
+  - **Operating System:** Ubuntu 20.04 LTS.
+  - **Python Version:** 3.8.10
+  - **Additional Software:**
+    - `ffmpeg`: (Version 4.2.7-0ubuntu0.1) For audio playback using the `play_audio_files()` script.
+    - Google Chrome Version: 131.0.6778.85
+    - Chromedriver (managed by SeleniumBase for compatibility).
+    - All required Python packages from `requirements.txt`.
+
+Reviewers can simply boot the VM and navigate to `/home/pets2025/Desktop/PETS2025` to access and execute the artifact. For executing artifact on your system, please refer to [This Section](https://github.com/elaineezhu/PETS2025/blob/main/README.md#installing-dependencies-manually-on-your-own-system) for more details on how to install dependencies.
+
 
 ### Estimated Time and Storage Consumption
-- Compute Time: Running each script individually should take a few minutes. However, the Audio file execution time depends on the audio files that are needed to be played.
-- Storage Consumption: Approximately 250–400 MB, including Python dependencies, Chrome installation, and any temporary logs or files generated during script execution.
-  
+
+- **Compute Time:** Running each script individually should take a few minutes. The time required for audio file processing depends on the size and length of the files.
+- **Storage Consumption:** The initial download size of the OVA file is approximately 4 GB. Dpeneding on the usecase, the VM's storage can expand up to the maximum allocated size of 14.32 GB as specified in the VM settings.
+
+
+
 ## Environment 
 
 ### Accessibility (All badges)
@@ -56,6 +90,30 @@ Commit ID: XXXXXXX
 
 
 ### Set up the environment (Only for Functional and Reproduced badges)
+
+### Using the VM with installed dependencies
+
+- **Download and Launch the VM**
+  
+1. **Download the VM**: Click [This link](https://drive.google.com/file/d/1Ir_N9LIUDepHPOK7J-032jnajA1-9oy7/view?usp=sharing) to download the OVA file for the VM.
+2. **Import the OVA into VirtualBox** (or your preferred virtualization software): Open VirtualBox, navigate to `File > Import Appliance`, and follow the prompts to import the downloaded OVA file.
+3. **Start the VM**: Once imported, start the VM. When prompted, use the password `123` to log in.
+
+- **Access the Project Files**
+Once logged into the VM:
+1. Open a terminal window.
+2. Navigate to the project directory with the following command:
+   
+   ```bash
+   cd /home/pets2025/Desktop/PETS2025
+   ```
+Now you can run the python codes there. For more instructions on how to run experiments, please refer to [the Experiments Section](https://github.com/elaineezhu/PETS2025/blob/main/README.md#experiments).
+
+   
+### Installing Dependencies Manually on your own System
+
+If you prefer to set up the environment on your own system, follow the steps below to clone the repository and install all necessary dependencies:
+
 1. Clone the repository.
    
 ```bash
@@ -64,8 +122,7 @@ cd PETS2025
 ```
 
 2. Install Dependencies:
-
-To set up dependencies on a host system:
+To set up dependencies manually on a host system:
 - Install ffmpeg (for audio playback):
   
 ```bash
@@ -123,7 +180,7 @@ This experiment validates the automation of sequential audio playback. Expected 
 2. Run the script using the following command.
 
 ```bash
-python voiceassistantscript.py
+python3 voiceassistantscript.py
 ```
 3. The audio files should start being played in sequence.
 
@@ -168,7 +225,7 @@ questions = ["Query 1", "Query 2", "Query 3"]
 4. Execute the script using the following command:
 
 ```bash
-python seleniumscript.py
+python3 seleniumscript.py
 ```
 
 **Expected Results:**
@@ -178,8 +235,8 @@ python seleniumscript.py
 - For each search query, the script waits for the search input element to be available, enters the query, and submits it.
 
 **Time and Storage Requirements:**
-- **Time:** The script should take approximately 5 minutes to complete, depending on network speed.
-- **Storage:** Minimal, as no files are saved; only temporary logs may be generated.
+- **Time:** The script should take approximately 2 minutes to complete, depending on network speed.
+- **Storage:** Minimal, as no files are saved.
 
 **Supporting Claims and Results:**
 This experiment demonstrates the artifact's ability to:
