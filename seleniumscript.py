@@ -14,7 +14,7 @@ questions = ["LIST",
              "QUERIES"]
 
 with SB(uc=True) as sb:
-    sb.open("https://mail.google.com")
+    sb.open("https://accounts.google.com/")
 
     # Wait for email input to be present
     sb.wait_for_element_present('input[type="email"]', timeout=10)
