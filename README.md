@@ -107,7 +107,7 @@ Once logged into the VM:
    ```bash
    cd /home/pets2025/Desktop/PETS2025
    ```
-Now you can run the python codes there. For more instructions on how to run experiments, please refer to [the Experiments Section](https://github.com/elaineezhu/PETS2025/blob/main/README.md#experiments).
+Now you can run the python codes there. For more instructions on how to run experiments, please refer to [the Experiments Section](https://github.com/NEU-SNS/voice-assistants-pets25/blob/main/README.md#experiments).
 
    
 ### Installing Dependencies Manually on your own System
@@ -117,7 +117,7 @@ If you prefer to set up the environment on your own system, follow the steps bel
 1. Clone the repository.
    
 ```bash
-git clone \https://github.com/NEU-SNS/voice-assistants-pets25.git
+git clone https://github.com/NEU-SNS/voice-assistants-pets25.git
 cd voice-assistants-pets25
 ```
 
