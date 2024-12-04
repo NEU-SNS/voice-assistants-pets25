@@ -69,7 +69,7 @@ If you prefer to run the artifact directly on your host system, ensure the follo
     - Chromedriver (managed by SeleniumBase for compatibility).
     - All required Python packages from `requirements.txt`.
 
-Reviewers can simply boot the VM and navigate to `/home/pets2025/Desktop/PETS2025` to access and execute the artifact. For executing artifact on your system, please refer to [This Section](https://github.com/elaineezhu/PETS2025/blob/main/README.md#installing-dependencies-manually-on-your-own-system) for more details on how to install dependencies.
+Reviewers can simply boot the VM and navigate to `/home/pets2025/Desktop/PETS2025` to access and execute the artifact. For executing artifact on your system, please refer to [This Section](https://github.com/NEU-SNS/voice-assistants-pets25/blob/main/README.md#installing-dependencies-manually-on-your-own-system) for more details on how to install dependencies.
 
 
 ### Estimated Time and Storage Consumption
