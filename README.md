@@ -117,8 +117,8 @@ If you prefer to set up the environment on your own system, follow the steps bel
 1. Clone the repository.
    
 ```bash
-git clone https://github.com/elaineezhu/PETS2025.git
-cd PETS2025
+git clone \https://github.com/NEU-SNS/voice-assistants-pets25.git
+cd voice-assistants-pets25
 ```
 
 2. Install Dependencies:
