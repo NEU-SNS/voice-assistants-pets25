@@ -105,7 +105,7 @@ Once logged into the VM:
 2. Navigate to the project directory with the following command:
    
    ```bash
-   cd /home/pets2025/Desktop/PETS2025
+   cd /home/pets2025/Desktop/voice-assistants-pets25
    ```
 Now you can run the python codes there. For more instructions on how to run experiments, please refer to [the Experiments Section](https://github.com/NEU-SNS/voice-assistants-pets25/blob/main/README.md#experiments).
 
