@@ -84,7 +84,7 @@ Reviewers can simply boot the VM and navigate to `/home/pets2025/Desktop/PETS202
 ### Accessibility (All badges)
 This artifact is accessible through a Git repository. To ensure a persistent and accessible version of the artifact, please use the following repository link and commit ID for evaluation:
 ```bash
-Repository URL: https://github.com/elaineezhu/PETS2025.git
+Repository URL: https://github.com/NEU-SNS/voice-assistants-pets25.git
 Commit ID: XXXXXXX
 ```
 
