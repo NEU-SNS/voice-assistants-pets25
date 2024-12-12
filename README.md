@@ -24,7 +24,7 @@ There are also two folders `Amazon Queries` and `Google Queries` containing the 
 
 ### Security/Privacy Issues and Ethical Concerns (All badges)
 
-- **Account Credentials:** Since the `seleniumscript.py` script requires reviewers to enter their Google login credentials, there is a risk associated with storing and processing these credentials. Reviewers should use a test account rather than a personal or sensitive account to avoid unintended data exposure. Additionally, please ensure that credentials are not stored in code files or shared inadvertently.
+- **Account Credentials:** Since the `seleniumscript.py` script requires users to enter their Google login credentials, there is a risk associated with storing and processing these credentials. Users should use a test account rather than a personal or sensitive account to avoid unintended data exposure. Additionally, please ensure that credentials are not stored in code files or shared inadvertently.
 - **Intended Use:** The artifact should only be used for research and review purposes as intended by the submission guidelines. The automation scripts are not intended for any malicious or unauthorized use.
 
 ## Basic Requirements (Only for Functional and Reproduced badges)
