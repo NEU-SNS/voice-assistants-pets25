@@ -7,7 +7,7 @@ Paper title: **Echoes of Privacy: Uncovering the Profiling Practices of Voice As
 
 Artifacts HotCRP Id: **16**
 
-Requested Badge: **Available**
+Requested Badge: **Functional**
 
 ## Description
 
