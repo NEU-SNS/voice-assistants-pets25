@@ -230,6 +230,11 @@ questions = ["Query 1", "Query 2", "Query 3"]
 ```bash
 python3 seleniumscript.py
 ```
+**Execution Notes:**
+- The script requires the user to replace `"USERNAME"` and `"PASSWORD"` with actual Google account credentials. Keeping them as `"USERNAME"` and `"PASSWORD"`, Google will detect the attempt as a bot and prevent login.
+
+- The script does not incorporate stealth mechanisms to bypass detection. In our evaluations across multiple accounts, we did not encounter any reCAPTCHA challenges. However, in case a reCAPTCHA is triggered, manual intervention will be required to proceed with the login steps.
+
 
 **Expected Results:**
 - The script should open Gmail's login page, enter your credentials, and successfully log into your Gmail account.
