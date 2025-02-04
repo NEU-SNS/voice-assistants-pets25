@@ -19,7 +19,7 @@ This artifact includes automation scripts for conducting voice and web experimen
 
 These scripts provide a way to run and observe interactions with both voice and web interfaces in an automated fashion.
 
-There are also two folders `Amazon Queries` and `Google Queries` containing the queries we used in our experiments for Amazon and Google and Siri. (We used the same Google queries for Siri as discussed in the paper).
+There are two folders `Amazon Queries` and `Google Queries` containing the queries we used in our experiments for Amazon and Google and Siri (We used the same Google queries for Siri as discussed in the paper). There is also a `Data` folder containing labels gathered from Google's My Ad Center and Amazon's Profile Hub for individual personas that were used to report results in Section 5 of the paper.
 
 
 ### Security/Privacy Issues and Ethical Concerns (All badges)
