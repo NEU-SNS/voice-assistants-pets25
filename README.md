@@ -150,7 +150,7 @@ google-chrome --version
 2. **TestAudio Playback:** To verify `ffmpeg` functionality, run:
 
 ```bash
-ffplay -nodisp -autoexit path/to/sample_audio.m4a
+ffplay -nodisp -autoexit /home/pets2025/Desktop/voice-assistants-pets25/Audio_Files/sample.m4a
 ```
 
 Each test ensures that Chrome, Selenium, and audio playback (using `ffmpeg`) are correctly set up and that the scripts can function as intended.
