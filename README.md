@@ -253,4 +253,5 @@ This experiment demonstrates the artifact's ability to:
 - Handle multiple search queries sequentially.
 
 **Future Works:**
+
 While this experiment focuses on audio playback and Google web search automation, additional meaningful actions to perform with the voice assistant automation such as personalized data retrieval, text-to-voice conversion, and other interactive tasks could be explored in future extensions to enhance its capabilities.
