@@ -88,7 +88,7 @@ Reviewers can simply boot the VM and navigate to `/home/pets2025/Desktop/voice-a
 This artifact is accessible through a Git repository. To ensure a persistent and accessible version of the artifact, please use the following repository link and commit ID for evaluation:
 ```bash
 Repository URL: https://github.com/NEU-SNS/voice-assistants-pets25.git
-Commit ID: 572baee623d46344b379e23f53c56ac5bb5a14b9
+Commit ID: f278e0f303d2f63e1463beff2241fd264b68e08f
 ```
 
 
