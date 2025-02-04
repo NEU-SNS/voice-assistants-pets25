@@ -11,7 +11,7 @@ Requested Badge: **Available**
 
 ## Description
 
-This artifact includes automation scripts for conducting voice and web experiments with voice assistants and Google searches, and the dataset of queries used in our experiemtns. It also includes a pre-configured virtual machine (VM) to facilitate the setup and execution of these experiments. The provided VM is configured with all the necessary dependencies and tools for running these scripts.
+This artifact includes automation scripts for conducting voice and web experiments with voice assistants and Google searches, the dataset of queries used in our experiemtns, and the labels gathered from Google's My Ad Center and Amazon's Profile Hub for individual personas evaluated in the paper. It also includes a pre-configured virtual machine (VM) to facilitate the setup and execution of these experiments. The provided VM is configured with all the necessary dependencies and tools for running these scripts.
 
 - **Voice Experiments:** The `voiceassistantscript.py` script plays recorded audio queries one after another, with a one-minute delay between each playback. This delay gives the voice assistant time to finish responding to the previous query before starting the next one.
 
